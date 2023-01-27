@@ -498,7 +498,7 @@ header {
 }
 
 .busines-partner:hover,
-.busines-partner:focus,{
+.busines-partner:focus{
     border: 1px solid currentColor;
     color: var(--pressed-state);
     
