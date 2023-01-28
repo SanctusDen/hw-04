@@ -31,10 +31,7 @@ body {
 
 /* Button */
 
-.btn:hover,
-.btn:focus {
-    background-color: var(--pressed-state);
-}
+
 
 .btn-hero {
     font-family: 'Roboto';
@@ -57,6 +54,10 @@ body {
    
 }
 
+.btn-hero:hover,
+.btn-hero:focus {
+    background-color: var(--pressed-state);
+}
 
 .button{
     font-family: 'Roboto';
@@ -251,14 +252,18 @@ header {
 /* section hero */
 
 .hero{
-
+    
     padding: 188px 0;
+    
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
         ),
     url('../images/people-office\ 1.jpg');
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -303,8 +308,9 @@ header {
     display: block;
     margin-bottom: 8px;
     background-color: var(--button-color-on);
+    fill: #2e2f42;
     border-radius: 4px;
-    background-image: url(../images/iconki/antenna.svg);
+    background-image: url(../images/icon/noiconmoon/antenna.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -317,7 +323,7 @@ header {
     margin-bottom: 8px;
     background-color: var(--button-color-on);
     border-radius: 4px;
-    background-image: url(../images/iconki/clock.svg);
+    background-image: url(../images/icon/noiconmoon/clock.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -330,7 +336,7 @@ header {
     margin-bottom: 8px;
     background-color: var(--button-color-on);
     border-radius: 4px;
-    background-image: url(../images/iconki/diagram.svg);
+    background-image: url(../images/icon/noiconmoon/diagram.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -343,7 +349,7 @@ header {
     margin-bottom: 8px;
     background-color: var(--button-color-on);
     border-radius: 4px;
-    background-image: url(../images/iconki/astronaut.svg);
+    background-image: url(../images/icon/noiconmoon/astronaut.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -489,13 +495,15 @@ header {
     border-radius: 4px;
     width: 168px;
     height: 88px;
+    color: var(--color-customer);
 
 }
 
 .brend{
-    fill: var(--color-customer);
-    padding: 16px 32px;
+    
+    fill: currentColor;
 }
+
 
 .busines-partner:hover,
 .busines-partner:focus{
@@ -539,6 +547,11 @@ header {
     font-weight: 500;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+}
+
+.two{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    
 }
 
 .gallery-text{
@@ -609,9 +622,9 @@ footer{
 }
 
 .footer-icon{
-    width: 16px;
-    height: 16px;
-    margin: 12px;
+    width: 24px;
+    height: 24px;
+    margin: 8px;
     fill: var(--button-color-on);
 }
 
