@@ -439,7 +439,6 @@ header {
 .actions{
     display: flex;
     justify-content: center;
-    margin-top: 8px;
     gap: 24px;
 
 }
@@ -549,9 +548,48 @@ header {
     margin-bottom: 8px;
 }
 
-.two{
+.gallery-item:hover,
+.gallery-item:focus{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     
+}
+
+/* Hw-05(overflow) */
+
+.footer-link:hover,
+.footer-link:focus{
+    background: var(--success-green);
+}
+
+
+.one{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.twoo{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--title-bgc-text);
+    color: var(--button-color-on);
+    padding: 40px 32px;
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    transform: translate(0,100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.two .link:hover .twoo,
+.two .link:focus .twoo{
+    transform: translate(0,0);
 }
 
 .gallery-text{
@@ -628,7 +666,3 @@ footer{
     fill: var(--button-color-on);
 }
 
-.footer-link:hover,
-.footer-link:focus{
-    background: var(--success-green);
-}
